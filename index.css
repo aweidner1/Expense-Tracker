@@ -21,7 +21,7 @@ main, footer {
     text-decoration: underline;
 }  
 
-.navbar li {
+.navbar li, .home-directory li{
     display: inline;
 }
 
