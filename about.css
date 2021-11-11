@@ -1,4 +1,4 @@
-main, footer {
+main{
     /*background: url("LUCBackground.jpg") no-repeat center center fixed;*/
     background-color: #2e9bb6;
     -webkit-background-size: cover;
@@ -12,6 +12,84 @@ p {
     left: 50px;
 }
 */
+.img_wrapper {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(auto-fit,1fr);*/
+    grid-gap: 10px;
+    background-color: #4bdde2;
+    color: #444;
+  }
+  
+  .box {
+    background-color: #2e9bb6;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 150%;
+    word-wrap: break-word;
+  }
+  
+  .a {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    .b {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    .c {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    .d{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    .about_wrapper {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /*grid-template-columns: repeat(auto-fit,1fr);*/
+        grid-gap: 10px;
+        background-color: #4bdde2;
+        color: #444;
+      }
+      
+      .box {
+        background-color: #2e9bb6;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 150%;
+        word-wrap: break-word;
+      }
+      
+      .aText {
+          grid-column: 1/2;
+          grid-row: 2/3;
+    
+        }
+        .bText {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .cText {
+          grid-column: 3/4;
+          grid-row: 2/3;
+        }
+        .dText{
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+    
+
 .header-background{
     /*Add more properties later*/
     background-image: url("HeaderBG.png");
@@ -23,34 +101,18 @@ p {
     text-decoration: underline;
 }  
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-    background: #f2f2f2;
-    overflow: auto;
-}
-
-.gallery {
-    margin: 5px;
-    border: 1px #2e9bb6;
-    float: left;
-    width: 250px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
 .navbar li, .home-directory li{
-    display: inline;
+    display: grid;
+    /*display: inline;*/
 }
 
 a {
-    display: inline-block;
-    padding: .5em;
+    /*display: inline-block;*/
+    display: grid;
+    /*padding: .5em;*/
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
+    grid-gap: 10px;
 }
 
 a:hover {
@@ -63,7 +125,7 @@ a:hover {
 
 img {
     /*Adding our org logo, still needs styling. How to move specific img?*/
-    border-radius: 50%;
+    border-radius: 10%;
     position: relative;
     top: 20px;
     left: 10px;

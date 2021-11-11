@@ -4,15 +4,19 @@
 .login-table{
     text-align: center;
 }
+
 .navbar li, .home-directory li{
-    display: inline;
+    display: grid;
+    /*display: inline;*/
 }
 
-a{
-    display: inline-block;
-    padding: .5em;
+a {
+    /*display: inline-block;*/
+    display: grid;
+    /*padding: .5em;*/
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
+    grid-gap: 10px;
 }
 
 a:hover {
