@@ -19,6 +19,7 @@ p {
     /*grid-template-columns: repeat(auto-fit,1fr);*/
     grid-gap: 10px;
     background-color: #4bdde2;
+    padding-top: 15px;
     color: #444;
   }
   
@@ -59,6 +60,7 @@ p {
         /*grid-template-columns: repeat(auto-fit,1fr);*/
         grid-gap: 10px;
         background-color: #4bdde2;
+        padding-bottom: 15px;
         color: #444;
       }
       
@@ -100,6 +102,14 @@ p {
     text-align: center;
     text-decoration: underline;
 }  
+
+footer {
+    background-image: url("HeaderBG.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    color: black;
+}
 
 .navbar li, .home-directory li{
     display: grid;
