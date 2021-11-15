@@ -31,25 +31,39 @@ footer {
     color: black; 
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-    background: #f2f2f2;
-    overflow: auto;
-    padding-bottom: 15px;
-}
-
-.gallery {
-    margin: 5px;
-    border: 1px #2e9bb6;
-    float: left;
-    width: 250px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
+.container_gallery {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(auto-fit,1fr);*/
+    grid-gap: 10px;
+    background-color: #4bdde2;
+    padding-top: 15px;
+    color: #444;
+  }
+  
+  .image {
+    background-color: #2e9bb6;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .a {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    .b {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    .c {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      text-align: center;
+    }
 
 .navbar li, .home-directory li{
     display: grid;
@@ -63,19 +77,20 @@ a {
     color: black;
     /*text-decoration: none;*/
     grid-gap: 10px;
+    transition: all 0.5s ease-out;
 }
 
 a:hover {
     text-decoration: underline;
-    background-color: lightcyan;
-    color: black;
+    background-color: #d5f4e6;
+    color: rgb(25, 71, 168);
     font-size: 20px;
-    transition: width 2s, height 2s, transform 2s;
+    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
-img {
+.pig {
     /*Adding our org logo, still needs styling. How to move specific img?*/
-    border-radius: 50%;
+    border-radius: 10px;
     position: relative;
     top: 20px;
     left: 10px;
