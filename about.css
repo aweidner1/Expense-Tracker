@@ -113,7 +113,15 @@ footer {
 
 .navbar li, .home-directory li{
     display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
     /*display: inline;*/
+}
+
+.WebHeader {
+    font-size: 30px;
 }
 
 a {

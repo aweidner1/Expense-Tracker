@@ -6,12 +6,7 @@ main {
     -o-background-size: cover;
     background-size:cover;
 }
-/* How to put box/container around text to limit the wrap/length of the paragraph?
-p {
-    position: relative;
-    left: 50px;
-}
-*/
+
 .header-background{
     /*Add more properties later*/
     background-image: url("HeaderBG.png");
@@ -21,6 +16,7 @@ p {
     color: black;
     text-align: center;
     text-decoration: underline;
+    box-sizing: border-box;
 }  
 
 footer {
@@ -67,7 +63,15 @@ footer {
 
 .navbar li, .home-directory li{
     display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
     /*display: inline;*/
+}
+
+.WebHeader {
+    font-size: 30px;
 }
 
 a {
