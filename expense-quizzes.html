@@ -24,84 +24,71 @@
             </h1>
         </header>
         <!--This section is ENTIRELY THE QUIZ, probably will need to delete this portion when remaking the quiz-->
-            <article class="survey">
-                <section class="q1">
-                    <h3>What are your financial goals?</h3>
-                    <ul class="option1">
-                        <li>Pay off debt</li>
-                        <li>Save more money</li>
-                        <li>Improve financial literacy</li>
-                        <li>Other</li>
-                    </ul>
-                </section>
-            </article>
+            <main>
+                <h1 class="Expense-Q">Expense Questionnaire</h1>
+                    <p class="attentionGrab"><i>Are you a saver, spender, or debtor?</i></p>
+                <form id="form1">
+                    <article class="q1">
+                    <p>What are your financial goals?</p>
+                        <label><input type="radio" name="goals" id="finGoals" value="saver" />Pay off debt</label>
+                        <label><input type="radio" name="goals" id="finGoals" value="spender" />Save more</label>
+                        <label><input type="radio" name="goals" id="finGoals" value="debtor" />Improve financial literacy</label>
+    
+                    </article>
+                    <article class="q2">
+                        <p>Do you have a job? If so, how much money do you make a week?</p>
+                        <label><input type="radio" name="jobStat" id="jobStatus" value="saver" />$25-$150</label>
+                        <label><input type="radio" name="jobStat" id="jobStatus" value="spender" />$275-$400</label>
+                        <label><input type="radio"  name="jobStat" id="jobStatus" value="debtor" />I do not have a job</label>
+                    </article>
+                    <article class="q3">
+                        <p>Which of the following financial breakdown scenarios best suites you? (on a monthly basis)</p>
+                        <label><input type="radio" name="financeStat" id="finBreak" value="saver" />Food(25%), Rent(50%), Social (12.5%), Other(12.5%)</label>
+                        <label><input type="radio" name="financeStat" id="finBreak" value="spender" />Food(15%), Rent(25%), Social (20%), Other(40%)</label>
+                        <label><input type="radio"  name="financeStat" id="finBreak" value="debtor" />Food(35%), Rent(10%), Social (35%), Other(20%)</label>
+                    </article>
+                    <article class="q4">
+                        <p>How much money a week do you typically spend?</p>
+                        <label><input type="radio" name="wkSpent" id="weeklySpend" value="saver" />$15-$35</label>
+                        <label><input type="radio" name="wkSpent" id="weeklySpend" value="spender" />$100-$250</label>
+                        <label><input type="radio"  name="wkSpent" id="weeklySpend" value="debtor" />$1000 or up</label>
+                    </article>
+                    <article class="q5">
+                        <p>Do you find yourself spending or saving more often?</p>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="saver" />I am more of a saver</label>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="spender" />I am more of a spender</label>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="debtor" />I aggressively spend more</label>
+                    </article>
+                    <article class="submit-btn">
+                        <input type="submit" value="submit">
+                    </article>
 
-            <article class="survey">
-                <section class="q2">
-                    <h3>Do you have a job? If so, how much money do you make a week?</h3>
-                    <ul class="option2">
-                        <li>$25-$150</li>
-                        <li>$150-$275</li>
-                        <li>$275-$400</li>
-                        <li>$1000 or up</li>
-                        <li>I do not have a job</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article class="survey">
-                <section class="q3">
-                    <h3>Which of the following financial breakdown scenarios best suites you? (on a monthly basis)</h3>
-                    <ul class="option3">
-                        <li>Food(25%), Rent(50%), Social (12.5%), Other(12.5%)</li>
-                        <li>Food(50%), Rent(25%), Social (20%), Other(5%)</li>
-                        <li>Food(15%), Rent(50%), Social (10%), Other(25%)</li>
-                        <li>Food(35%), Rent(15%), Social (35%), Other(15%)</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article class="survey">
-                <section class="q4">
-                    <h3>How much money a week do you typically spend?</h3>
-                    <ul class="option4">
-                        <li>$25-$150</li>
-                        <li>$150-$275</li>
-                        <li>$275-$400</li>
-                        <li>$1000 or up</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article class="survey">
-                <section class="q5">
-                    <h3>Do you find yourself spending or saving more often?</h3>
-                    <ul class="option5">
-                        <li>I am more of a spender</li>
-                        <li>I am more of a saver</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article class="survey">
-                <section class="q6">
-                    <h3>Do invest passively? If so, how much do you invest at a time?</h3>
-                    <ul class="option6">
-                        <li>Yes, anywhere between $50-$250</li>
-                        <li>No, I do not invest</li>
-                        <li>Yes, anwhere between $250-$500</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article class="end">
-                <h1>Thank you</h1>
-                <p> We will get back to you soon!</p>
-                <a href="expense-quizzes.html">Home</a>
-            </article>
+                </form>
+                <p id="response">You got: <span id="answer"></span></p>
+            </main>
         <!--This section is ENTIRELY THE QUIZ, probably will need to delete this portion when remaking the quiz-->
     </body>
     <footer>
-        
+        <script src="expense.js"></script>
+        <section>
+            <p>
+                This is a project created by Alec Weidner, Emily Yamasaki, Kiarra Villaraza, and Emily Burda.
+            </p>
+            <h3>
+                Have a question? Contact us!
+            </h3>
+            <ul>
+                <li>
+                    <a href="aweidner1@luc.edu"> Alec's Email</a>
+                </li>
+                <li>
+                    <a href="eyamasaki@luc.edu"> Emily Yamasaki's Email</a>                    </li>        
+                <li>
+                    <a href="eburda@luc.edu"> Emily Burda's Email </a>
+                </li> 
+                <li>
+                    <a href="kvillaraza@luc.edu"> Kiarra Villaraza's Email</a>                    </li>               
+            </ul>
+        </section>
     </footer>
 </html>
