@@ -81,17 +81,20 @@ img {
 p {
     font-size: large;
     font: Serif;
+    
 }
 
 
 body {
-    background-color: #2e9bb6;
+    background-image: url("questionnaire-bg.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
     font-family: serif;
     }
     
 .Expense-Q{
     text-align: center;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .attentionGrab {
@@ -104,7 +107,7 @@ body {
     border: 1px gray solid;
     margin: auto;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #69b8cc;
     border-radius: 10px;
     }
     
@@ -150,17 +153,24 @@ body {
         font-weight: 900;
     }
     
-   
-    
     button {
     display: block;
     margin-top: 20px;
     }
 
+    .heading {
+        text-align: center;
+    }
 
+    h3 {
+        color: black;
+        text-decoration: underline;
+        font-weight: 600;
+    }
 
-
-
+    .ssExplained {
+        text-align: center;
+    }
 /*Most of what is under this was added for the expense quiz format, this will need to be changed assuming the quiz style is
 written differently*/
 
