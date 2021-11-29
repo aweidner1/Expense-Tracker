@@ -8,12 +8,13 @@
         <title>Financial breakdown</title>
     </head>
     <body>
+
         <header class="header-background">
             <nav class="navbar">
                 <ul>
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="expense-quizzes.html">Expense Questionnaire</a></li>
-                    <li><a href="aweidner1@luc.edu">Contact Us</a></li>
+                    <li><a href="financial-breakdown.html">Budget Calculator</a></li>
                     <li><a href="login.html">Sign In</a></li>
                 </ul>
             </nav>
@@ -25,7 +26,120 @@
                 </nav>
             </h1>
         </header>
-        <main>
+
+            <main>
+                <section class="container">
+                    <h1>Budget Tool</h1>
+
+                  <section class="budget-section">
+                    <section class="budget col col-md col-sm">
+                      <h2>Budget</h2>
+                      <img src="money-bags.png" width="40" alt="" />
+                      <p class="amount">$ <span id="budgetAmount">0</span></p>
+                    </section>
+                    <section class="expenses col col-md col-sm">
+                      <h2>Expenses</h2>
+                      <img src="expenses.png" width="40" alt="" />
+                      <p class="exp-amount">$ <span id="expensesAmount">0</span></p>
+                    </section>
+                    <section class="balance col col-md col-sm">
+                      <h2>Balance</h2>
+                      <img src="balance.jpg" width="40" alt="" />
+                      <p class="amount bala">$ <span id="balanceAmount">0</span></p>
+                    </section>
+                  </section>
+
+                  <section id="expenseList">
+                    <section class="budget-list">
+                      <section class="col">
+                        <h4>Item</h4>
+                      </section>
+                      <section class="col">
+                        <h4>Cost</h4>
+                      </section>
+                      <section class="col"></section>
+                      </section>
+                    <section id="expValue"></section>
+                    </section>
+                </section>
+
+                <article class="toggle">
+                  <button id="btn" type="button">+</button>
+                </article>
             
-        </main>
+                
+                <section id="myModel" class="model">
+                  <section class="model-content">
+                    <section class="model-header">
+                      <span class="close">&times;</span>
+                      <h2>Budget Form</h2>
+                    </section>
+                    <section class="model-body">
+                      <article class="budget-form" id="budgetform">
+                        <form id="addForm">
+                          <label for=""> Make a budget</label> <br />
+                          <input type="number" id="number" /> <br />
+                          <button type="submit">Add Budget</button>
+                        </form>
+                      </article>
+            
+                      <article class="expense-form" id="expense-form">
+                        <form action="" id="expForm">
+                          <section class="">
+                            <label for="">please enter your expense</label> <br />
+                            <input type="text" id="expName" />
+                          </section>
+                          <section class="">
+                            <label for="">please enter expense amount</label> <br />
+                            <input type="number" id="expNumber" />
+                          </section>
+                          <button type="submit" id="submitExpen">Add expense</button>
+                        </form>
+                        <button onclick="callBudget()" id="bug">
+                          Back to add budget ->
+                        </button>
+                      </article>
+            
+                      <article class="edit-form" id="editForm">
+                        <form action="" id="saveEdit">
+                          <section class="">
+                            <label for="">Edit your expense</label> <br />
+                            <input type="text" id="editExpName" />
+                          </section>
+                          <section class="">
+                            <label for="">Edit expense amount</label> <br />
+                            <input type="number" id="editExpNumber" />
+                          </section>
+                          <button type="submit">Save changes</button>
+                        </form>
+                      </article>
+                    </section>
+                  </section>
+                </section>
+            </main>
     </body>
+    <footer>
+        <!--JS FILE-->
+        <script src= "breakdown.js"></script>
+        <!--Contact us section-->
+        <section>
+            <p>
+                This is a project created by Alec Weidner, Emily Yamasaki, Kiarra Villaraza, and Emily Burda.
+            </p>
+            <h3>
+                Have a question? Contact us!
+            </h3>
+            <ul>
+                <li>
+                    <a href="aweidner1@luc.edu"> Alec's Email</a>
+                </li>
+                <li>
+                    <a href="eyamasaki@luc.edu"> Emily Yamasaki's Email</a>                    </li>        
+                <li>
+                    <a href="eburda@luc.edu"> Emily Burda's Email </a>
+                </li> 
+                <li>
+                    <a href="kvillaraza@luc.edu"> Kiarra Villaraza's Email</a>                    </li>               
+            </ul>
+        </section>
+    </footer>

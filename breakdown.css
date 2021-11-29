@@ -1,0 +1,254 @@
+main {
+    /*background: url("LUCBackground.jpg") no-repeat center center fixed #2e9bb6; ;*/
+    background-color: #2e9bb6;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+.header-background{
+    /*Add more properties later*/
+    background-image: url("HeaderBG.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    box-sizing: border-box;
+}  
+
+footer {
+    background-image: url("HeaderBG.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: black; 
+}
+
+
+.navbar li, .home-directory li{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
+    /*display: inline;*/
+}
+
+a {
+    /*display: inline-block;*/
+    white-space: nowrap;
+    display: grid;
+    /*padding: .5em;*/
+    color: black;
+    /*text-decoration: none;*/
+    grid-gap: 10px;
+    transition: all 0.5s ease-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #d5f4e6;
+    color: rgb(25, 71, 168);
+    font-size: 20px;
+    /*transition: width 2s, height 2s, transform 2s;*/
+}
+
+p {
+    font-size: large;
+    font: Serif;
+
+}
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font:serif;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+
+/*Start*/
+  
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+    font: serif;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .budget-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 160px;
+  }
+  .budget-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+  }
+  .exp-amount {
+    color: rgb(173, 8, 8);
+  }
+  .amount {
+    color: #1b8d04;
+  }
+  .col {
+    width: 40%;
+    text-align: center;
+  }
+  .col p {
+    font-size: 50px;
+    margin: 10px;
+  }
+  .toggle {
+    position: fixed;
+    right: 0;
+    bottom: 18px;
+  }
+  .toggle button {
+    border: none;
+    border-radius: 10px;
+    background: #021b36;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 10px 50px 0 0;
+    cursor: pointer;
+  }
+
+  .budget-form {
+    width: 60%;
+    min-height: 200px;
+  }
+  form {
+    margin: 10px 0 20px 10px;
+    min-height: 100px;
+  }
+  input {
+    width: 60%;
+    padding: 8px 0;
+    border: 1px solid gray;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  #displayExpenses {
+    width: 100%;
+    display: none;
+  }
+  .expValue {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+  }
+  #expTitleName {
+    width: 40%;
+  }
+  #expValueAmount {
+    width: 40%;
+  }
+  #edite_delete {
+    width: 40%;
+  }
+  
+  #edite_delete button {
+    margin-left: 1px;
+    background: none;
+    border: none;
+  }
+  .budget-form button {
+    background: #2e9bb6;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #bug {
+    font-size: 14px;
+    background: none;
+    color: #2e9bb6;
+    margin: 0px 0px 15px 10px;
+    padding: 0;
+  }
+  #expense-form {
+    width: 100%;
+    display: none;
+  }
+  #editForm {
+    display: none;
+    width: 100%;
+  }
+  #editForm button {
+    background: #b80c09;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 30px;
+    cursor: pointer;
+    
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .expense-form button {
+    background: #2e9bb6;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+  }
+  .model {
+    display: block;
+    position: fixed;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation-duration: .5s;
+  }
+  
+  .model-content {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    background-color: #fefefe;
+    width: 50%;
+    min-height: 40px;
+    animation-duration: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    color: #000;
+  }
+  .model-header {
+    padding: 10px 16px;
+    border-bottom: 2px solid gray;
+  }
+  .model-body {
+    padding: 2px 16px;
+  }
+  
+ 

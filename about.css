@@ -108,6 +108,7 @@ footer {
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 30px;
+    padding-top: 20px;
     color: black;
 }
 
