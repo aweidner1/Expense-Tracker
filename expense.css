@@ -1,10 +1,10 @@
 footer {
-    /*background: url("LUCBackground.jpg") no-repeat center center fixed;*/
-    background-color: #2e9bb6;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
+    background-image: url("HeaderBG.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: black; 
 }
 
 .header-background{
@@ -12,11 +12,12 @@ footer {
     background-image: url("HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     color: black;
     text-align: center;
     text-decoration: underline;
-}  
+    box-sizing: border-box;
+}
 
 .container{
     max-width: 1200px;
@@ -80,10 +81,100 @@ img {
 p {
     font-size: large;
     font: Serif;
+    
 }
+
+
+body {
+    background-image: url("questionnaire-bg.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: serif;
+    }
+    
+.Expense-Q{
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+.attentionGrab {
+    text-align: center;
+    font-size: medium;
+}
+
+    main {
+    width: 60%;
+    border: 1px gray solid;
+    margin: auto;
+    padding: 10px;
+    background-color: #69b8cc;
+    border-radius: 10px;
+    }
+    
+    .q1, .q2, .q3, .q4, .q5 {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #2e9bb6;
+        color: black;
+        height: 200px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 7px rgba(0,0,0);
+  
+    }
+
+    .submit-btn {
+        background-color: #2e9bb6;
+        color: black;
+        height: 25px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 7px rgba(0,0,0);
+        background: #2e9bb6;
+        text-align: center;
+        width: 25%;
+        margin: 20px auto;
+    /* margin: 35% auto FOR MORE SPACE BETWEEN LAST QUESTION AND THE ENDING BOX*/
+        padding: 20px 0;
+    }
+
+    label {
+    font-family: serif;
+    text-align: center;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 150px;
+    display: inline-block;
+    }
+
+    #response {
+        display: none;
+        text-align: center;
+        font-weight: 900;
+    }
+    
+    button {
+    display: block;
+    margin-top: 20px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    h3 {
+        color: black;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .ssExplained {
+        text-align: center;
+    }
 /*Most of what is under this was added for the expense quiz format, this will need to be changed assuming the quiz style is
 written differently*/
 
+/*
 body {
     font-family: serif;
     text-align: center;
@@ -132,7 +223,7 @@ li {
     color: black;
     width: 80%;
     margin: auto;
-    /* margin: 35% auto FOR MORE SPACE BETWEEN LAST QUESTION AND THE ENDING BOX*/
+    /* margin: 35% auto FOR MORE SPACE BETWEEN LAST QUESTION AND THE ENDING BOX
     padding: 20px 0;
     border-radius: 3px;
     box-shadow: 1px 1px 7px rgba(0,0,0);
@@ -159,5 +250,6 @@ li {
     background: #d5f4e6;
     transition: 0.3s;
 }
+
 /*Most of what is under this was added for the expense quiz format, this will need to be changed assuming the quiz style is
 written differently*/

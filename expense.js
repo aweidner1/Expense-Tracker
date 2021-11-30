@@ -1,54 +1,66 @@
-//This is ENTIRELY for the quiz, we will need to remake this assuming the quiz is written differently
-const ul_1 = document.querySelector("option1");
-const ul_2 = document.querySelector("option2");
-const ul_3 = document.querySelector("option3");
-const ul_4 = document.querySelector("option4");
-const ul_5 = document.querySelector("option5");
-const ul_6 = document.querySelector("option6");
+document.getElementById("form1").onsubmit=function() {
+    //displays the response DOM element
+ document.getElementById("response").style.display = "block";
 
-const q1 = document.querySelector(".q1");
-const q2 = document.querySelector(".q2");
-const q3 = document.querySelector(".q3");
-const q4 = document.querySelector(".q4");
-const q5 = document.querySelector(".q5");
-const q6 = document.querySelector(".q6");
+ //resets the DOM element on submit
+ document.getElementById("answer").innerHTML = "";
 
-const survey = document.querySelector(".survey");
-const end = document.querySelector(".end");
+   goals = document.querySelector('input[name = "goals"]:checked').value;
 
-//first question
-ul_1.addEventListener("click", function(){
-    q1.style.display = "none";
-    q2.style.display = "block";
-});
+   jobStat = document.querySelector('input[name = "jobStat"]:checked').value;
 
-//second question
-ul_2.addEventListener("click", function(){
-    q2.style.display = "none";
-    q3.style.display = "block";
-});
+   financeStat = document.querySelector('input[name = "financeStat"]:checked').value;
 
-ul_3.addEventListener("click", function(){
-    q3.style.display = "none";
-    q4.style.display = "block";
-});
+   wkSpent = document.querySelector('input[name = "wkSpent"]:checked').value;
 
-ul_4.addEventListener("click", function(){
-    q4.style.display = "none";
-    q5.style.display = "block";
-});
+   spentFreq = document.querySelector('input[name = "spentFreq"]:checked').value;
 
-ul_5.addEventListener("click", function(){
-    q5.style.display = "none";
-    q6.style.display = "block";
-});
 
-ul_6.addEventListener("click", function(){
-    q6.style.display = "none";
-    survery.style.display = "none";
-    end.style.display = "block";
-});
-//This is ENTIRELY for the quiz, we will need to remake this assuming the quiz is written differently
+   // initialize score variables
+   saver = 0;
+   spender = 0;
+   debtor = 0;
+
+
+   //function to calculate score for each question
+   function eachscore(x){
+   if(x == "saver") { saver = saver + 1}
+   if(x == "spender") { spender = spender + 1}
+   if(x == "debtor") { debtor = debtor + 1}
+   }
+   // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+
+   //call function for each question
+   eachscore(eval("goals"));
+   eachscore(eval("jobStat"));
+   eachscore(eval("financeStat"));
+   eachscore(eval("wkSpent"));
+   eachscore(eval("spentFreq"));
+
+
+   all = [saver, spender, debtor];
+
+ //get the max score  in the array
+ maxscore = Math.max.apply(Math,all);
+
+ // object holding scores and feedback
+ scores = [{index:0, feedback: "saver"},
+ {index:1, feedback: "spender"},
+ {index:2, feedback: "debtor"}];
+
+ //figure out which index # holds the max score
+ for(i=0; i<all.length; i++) {
+ if(all[i]==maxscore) {
+ //this gets one answer, the last one it encounters with a match
+ //document.getElementById("answer").innerHTML = scores[i].feedback;
+
+ //this version would allow for appending multiple answers; replace statement above
+ document.getElementById("answer").innerHTML += scores[i].feedback + ", ";
+ }
+ }
+
+return false; // required to not refresh the page; just leave this here
+    }// end the submit function
 
 
 
