@@ -79,7 +79,7 @@ body {
     margin: auto;
     padding: 10px;
     background-color: #69b8cc;
-    border-radius: 10px;
+    border-radius: 3px;
     }
     
     .q1, .q2, .q3, .q4, .q5 {
@@ -89,6 +89,7 @@ body {
         color: black;
         height: 200px;
         border-radius: 3px;
+        text-align: center;
         box-shadow: 1px 1px 7px rgba(0,0,0);
   
     }
@@ -99,7 +100,7 @@ body {
         height: 25px;
         border-radius: 3px;
         box-shadow: 1px 1px 7px rgba(0,0,0);
-        background: #2e9bb6;
+        
         text-align: center;
         width: 25%;
         margin: 20px auto;
