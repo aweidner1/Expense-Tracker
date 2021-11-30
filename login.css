@@ -41,7 +41,7 @@ a:hover {
     background-image: url("HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
-    padding-bottom: 30px;
+    padding-bottom: 35%; 
     color: black;
     text-align: center;
     text-decoration: underline;
