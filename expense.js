@@ -2,7 +2,6 @@ document.getElementById("form1").onsubmit=function() {
     //displays the response DOM element
  document.getElementById("response").style.display = "block";
 
- //resets the DOM element on submit
  document.getElementById("answer").innerHTML = "";
 
    goals = document.querySelector('input[name = "goals"]:checked').value;
@@ -28,7 +27,6 @@ document.getElementById("form1").onsubmit=function() {
    if(x == "spender") { spender = spender + 1}
    if(x == "debtor") { debtor = debtor + 1}
    }
-   // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
 
    //call function for each question
    eachscore(eval("goals"));
@@ -39,6 +37,26 @@ document.getElementById("form1").onsubmit=function() {
 
 
    all = [saver, spender, debtor];
+
+   var  xValues = ["Saver", "Spender", "Debtor"];
+   var yValues = [all[0], all[1], all[2]]; 
+   var barColors = ["rgb(83, 112, 194)", "rgb(11, 32, 78)", "#2b5797"];
+   new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Spending Breakdown"
+      }
+    }
+  });
 
  //get the max score  in the array
  maxscore = Math.max.apply(Math,all);
@@ -51,16 +69,10 @@ document.getElementById("form1").onsubmit=function() {
  //figure out which index # holds the max score
  for(i=0; i<all.length; i++) {
  if(all[i]==maxscore) {
- //this gets one answer, the last one it encounters with a match
- //document.getElementById("answer").innerHTML = scores[i].feedback;
-
  //this version would allow for appending multiple answers; replace statement above
  document.getElementById("answer").innerHTML += scores[i].feedback + ", ";
  }
  }
 
-return false; // required to not refresh the page; just leave this here
+return false; 
     }// end the submit function
-
-
-

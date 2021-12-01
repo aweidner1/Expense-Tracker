@@ -8,7 +8,6 @@ footer {
 }
 
 .header-background{
-    /*Add more properties later*/
     background-image: url("HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
@@ -25,7 +24,6 @@ footer {
     margin: 0 auto;
     padding: 4px;
     border-radius: 3px;
-    /*display: inline;*/
 }
 
 .WebHeader {
@@ -68,6 +66,11 @@ body {
     /*text-decoration: underline;*/
 }
 
+canvas {
+    margin: 20px auto;
+    text-align: center;
+}
+
 .attentionGrab {
     text-align: center;
     font-size: medium;
@@ -99,12 +102,10 @@ body {
         color: black;
         height: 25px;
         border-radius: 3px;
-        box-shadow: 1px 1px 7px rgba(0,0,0);
-        
+        box-shadow: 1px 1px 7px rgba(0,0,0);   
         text-align: center;
         width: 25%;
         margin: 20px auto;
-    /* margin: 35% auto FOR MORE SPACE BETWEEN LAST QUESTION AND THE ENDING BOX*/
         padding: 20px 0;
     }
 
@@ -120,11 +121,14 @@ body {
     }
 
     #response {
-        display: none;
+        color: black;
+        text-shadow: 2px 2px 4px #0d1a2b;
         text-align: center;
-        font-weight: 900;
+        display: grid;
+        width: 350px;
+        margin: 0 auto; 
     }
-    
+
     button {
     display: block;
     margin-top: 20px;
@@ -143,85 +147,3 @@ body {
     .ssExplained {
         text-align: center;
     }
-/*Most of what is under this was added for the expense quiz format, this will need to be changed assuming the quiz style is
-written differently*/
-
-/*
-body {
-    font-family: serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.survey {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #2e9bb6;
-    color: black;
-    height: 200px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 7px rgba(0,0,0);
-}
-
-.survey h3 {
-    margin: 8px;
-    padding-top: 10px;
-}
-
-.survey li {
-    margin: 10px;
-    cursor: pointer;
-}
-
-.survey li:hover {
-    background: #d5f4e6;
-    width: 400px;
-    margin: 0 auto;
-    padding: 4px;
-    border-radius: 3px;
-    transition: all 0.5s ease-out;
-}
-
-.end {
-    background: #2e9bb6;
-    color: black;
-    width: 80%;
-    margin: auto;
-    /* margin: 35% auto FOR MORE SPACE BETWEEN LAST QUESTION AND THE ENDING BOX
-    padding: 20px 0;
-    border-radius: 3px;
-    box-shadow: 1px 1px 7px rgba(0,0,0);
-}
-
-.end h1 {
-    margin: 5px;
-}
-
-.end p {
-    padding: 10px;
-}
-
-.end a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 4px;
-    background: lightblue;
-    outline: none;
-}
-
-.end a:hover {
-    background: #d5f4e6;
-    transition: 0.3s;
-}
-
-/*Most of what is under this was added for the expense quiz format, this will need to be changed assuming the quiz style is
-written differently*/
