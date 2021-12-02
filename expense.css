@@ -1,5 +1,5 @@
 footer {
-    background-image: url("HeaderBG.png");
+    background-image: url("/img/HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 50px;
@@ -8,7 +8,7 @@ footer {
 }
 
 .header-background{
-    background-image: url("HeaderBG.png");
+    background-image: url("/img/HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 50px;
@@ -55,7 +55,7 @@ p {
 }
 
 body {
-    background-image: url("questionnaire-bg.jpg");
+    background-image: url("/img/questionnaire-bg.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     font-family: serif;

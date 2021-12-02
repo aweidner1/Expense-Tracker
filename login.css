@@ -38,7 +38,7 @@ a:hover {
 
 .header-background{
     /*Add more properties later*/
-    background-image: url("HeaderBG.png");
+    background-image: url("/img/HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 35%; 
