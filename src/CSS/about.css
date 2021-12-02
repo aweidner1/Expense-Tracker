@@ -28,7 +28,7 @@ body {
 }
 
   .box {
-    background-image: url("questionnaire-bg.jpg");
+    background-image: url("/img/questionnaire-bg.jpg");
     color: black;
     border-radius: 10px;
     padding: 20px;
