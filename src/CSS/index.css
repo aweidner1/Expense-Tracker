@@ -24,7 +24,7 @@ footer {
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 0px;
     color: black; 
 }
 /*Container gallery down to abc classes, needs to be changed*/
