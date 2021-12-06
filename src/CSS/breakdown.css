@@ -242,6 +242,7 @@ p {
     float: right;
     font-size: 28px;
     color: #000;
+    cursor: default;
   }
   .model-header {
     padding: 10px 16px;
