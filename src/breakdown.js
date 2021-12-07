@@ -98,12 +98,7 @@ function displayExp(details) {
     <div class="expValue" id="${details[i].id}">
       <div id="expTitleName" class="exp"><p>${details[i].name}</p></div>
       <div id="expValueAmount" class="exp"><p> <span>$ </span> ${details[i].number}</p></div>
-      <div id="edite_delete">
-        <p>
-          <button id="${details[i].id}" onclick="editExpDetails(${details[i].id})"> <img src="image/edit.svg" width="15" alt=""  /></button> 
-          <button id="${details[i].id}" onclick="delExpenseDetails(${details[i].id})"><img src="image/trash.svg" width="15" alt="" /></button>
-        </p>
-      </div>
+      <div id="edite_delete"></div>
     </div>
   `;
   }
