@@ -27,12 +27,10 @@ footer {
     padding-top: 0px;
     color: black; 
 }
-/*Container gallery down to abc classes, needs to be changed*/
 .container_gallery {
     display: grid;
     list-style-type: none;
     grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-columns: repeat(auto-fit,1fr);*/
     grid-gap: 10px;
     background-color: #69b8cc;
     padding-top: 15px;
@@ -68,11 +66,8 @@ footer {
 }
 
 a {
-    /*display: inline-block;*/
     display: grid;
-    /*padding: .5em;*/
     color: black;
-    /*text-decoration: none;*/
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -85,11 +80,9 @@ a:hover {
     background-color: #d5f4e6;
     color: rgb(25, 71, 168);
     font-size: 20px;
-    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
 .pig {
-    /*Adding our org logo, still needs styling. How to move specific img?*/
     border-radius: 15px;
     position: relative;
     top: 20px;
@@ -97,7 +90,6 @@ a:hover {
     padding-bottom: 5px;
     padding-top: 5px;
     object-fit: contain; 
-    /*or use cover...*/
 }
 
 p {

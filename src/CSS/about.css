@@ -1,22 +1,15 @@
 main{
-    /*background: url("LUCBackground.jpg") no-repeat center center fixed;*/
     background-color: #2e9bb6;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
 }
-/* How to put box/container around text to limit the wrap/length of the paragraph?
-p {
-    position: relative;
-    left: 50px;
-}
-*/
+
 .img_wrapper {
     display: grid;
     list-style-type: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /*grid-template-columns: repeat(auto-fit,1fr);*/
     grid-gap: 10px;
     background-color: #2e9bb6;
     padding-top: 15px;
@@ -97,7 +90,6 @@ body {
     
 
 .header-background{
-    /*Add more properties later*/
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
     background-blend-mode: multiply;
@@ -122,7 +114,6 @@ footer {
     margin: 0 auto;
     padding: 4px;
     border-radius: 3px;
-    /*display: inline;*/
 }
 
 .WebHeader {
@@ -130,11 +121,8 @@ footer {
 }
 
 a {
-    /*display: inline-block;*/
     display: grid;
-    /*padding: .5em;*/
     color: black;
-    /*text-decoration: none;*/
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -144,26 +132,19 @@ a:hover {
     background-color: #d5f4e6;
     color: rgb(25, 71, 168);
     font-size: 20px;
-    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
 img {
-    /*Adding our org logo, still needs styling. How to move specific img?*/
+
     border-radius: 10%;
     position: relative;
     top: 20px;
     left: 10px;
     object-fit: contain; 
-    /*or use cover...*/
+
 }
 
 p {
     font-size: large;
     font: Serif;
-/*
-    width: 600px;
-    border: 1px solid #000;
-    word-wrap: break-word;
-    text-align: center;
-*/
 }
