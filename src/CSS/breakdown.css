@@ -9,7 +9,7 @@ main {
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
     padding-bottom: 50px;
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: underline;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ footer {
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 20px;
-    color: black; 
+    color: white; 
 }
 
 
@@ -35,7 +35,7 @@ footer {
 a {
     white-space: nowrap;
     display: grid;
-    color: black;
+    color: white;
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -127,7 +127,7 @@ p {
     padding: 8px 0;
     border: 1px solid gray;
     margin: 10px 0;
-    color: black;
+    color: white;
   }
   
   #displayExpenses {
