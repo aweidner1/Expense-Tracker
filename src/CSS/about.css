@@ -1,8 +1,5 @@
 main{
     background-color: #2e9bb6;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size:cover;
 }
 
@@ -54,7 +51,6 @@ body {
         display: grid;
         list-style-type: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        /*grid-template-columns: repeat(auto-fit,1fr);*/
         grid-gap: 10px;
         background-color: #2e9bb6;
         padding-bottom: 15px;

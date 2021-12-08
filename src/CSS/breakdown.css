@@ -1,9 +1,6 @@
 main {
     /*background: url("LUCBackground.jpg") no-repeat center center fixed #2e9bb6; ;*/
     background-color: #2e9bb6;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size:cover;
 }
 
@@ -11,7 +8,6 @@ main {
     /*Add more properties later*/
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
-    background-blend-mode: multiply;
     padding-bottom: 50px;
     color: black;
     text-align: center;
@@ -22,7 +18,6 @@ main {
 footer {
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
-    background-blend-mode: multiply;
     padding-bottom: 50px;
     padding-top: 20px;
     color: black; 
@@ -35,16 +30,12 @@ footer {
     margin: 0 auto;
     padding: 4px;
     border-radius: 3px;
-    /*display: inline;*/
 }
 
 a {
-    /*display: inline-block;*/
     white-space: nowrap;
     display: grid;
-    /*padding: .5em;*/
     color: black;
-    /*text-decoration: none;*/
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -54,7 +45,6 @@ a:hover {
     background-color: #d5f4e6;
     color: rgb(25, 71, 168);
     font-size: 20px;
-    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
 p {
@@ -69,10 +59,7 @@ p {
     font:serif;
     height: 100vh;
     background-color: #2e9bb6;
-  }
-
-/*Start*/
-  
+  }  
   
   h1 {
     margin: 0;
@@ -216,7 +203,6 @@ p {
   .model {
     display: block;
     position: fixed;
-    
     left: 0;
     top: 0;
     width: 100%;

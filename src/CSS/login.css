@@ -11,7 +11,6 @@
     margin: 0 auto;
     padding: 4px;
     border-radius: 3px;
-    /*display: inline;*/
 }
 
 .WebHeader {
@@ -19,11 +18,8 @@
 }
 
 a {
-    /*display: inline-block;*/
     display: grid;
-    /*padding: .5em;*/
     color: black;
-    /*text-decoration: none;*/
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -33,14 +29,11 @@ a:hover {
     background-color: #d5f4e6;
     color: rgb(25, 71, 168);
     font-size: 20px;
-    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
 .header-background{
-    /*Add more properties later*/
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
-    background-blend-mode: multiply;
     padding-bottom: 35%; 
     color: black;
     text-align: center;

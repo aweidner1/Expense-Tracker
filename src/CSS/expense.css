@@ -1,7 +1,6 @@
 footer {
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
-    background-blend-mode: multiply;
     padding-bottom: 50px;
     padding-top: 20px;
     color: black; 
@@ -10,7 +9,6 @@ footer {
 .header-background{
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
-    background-blend-mode: multiply;
     padding-bottom: 50px;
     color: black;
     text-align: center;
@@ -53,7 +51,6 @@ p {
 body {
     background-image: url("/img/questionnaire-bg.jpg");
     background-size: cover;
-    background-blend-mode: multiply;
     font-family: serif;
     }
     
@@ -82,7 +79,7 @@ canvas {
     
     .q1, .q2, .q3, .q4, .q5 {
         width: 80%;
-        margin: 20px auto;
+        margin: 30px auto;
         background-color: #2e9bb6;
         color: black;
         height: 200px;
