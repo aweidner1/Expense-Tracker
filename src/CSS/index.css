@@ -10,7 +10,7 @@ main {
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
     padding-bottom: 50px;
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: underline;
     box-sizing: border-box;
@@ -21,7 +21,7 @@ footer {
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 0px;
-    color: black; 
+    color: white; 
 }
 .container_gallery {
     display: grid;
@@ -36,7 +36,7 @@ footer {
   
   .image-a, .image-b, .image-c {
     display: flex;
-    color: black;
+    color: white;
     border-radius: 10px;
     padding: 20px;
   }
@@ -63,7 +63,7 @@ footer {
 
 a {
     display: grid;
-    color: black;
+    color: white;
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
