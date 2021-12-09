@@ -3,14 +3,14 @@ footer {
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 20px;
-    color: white; 
+    color: black; 
 }
 
 .header-background{
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
     padding-bottom: 50px;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: underline;
     box-sizing: border-box;
@@ -30,7 +30,7 @@ footer {
 
 a {
     display: grid;
-    color: white;
+    color: black;
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -81,7 +81,7 @@ canvas {
         width: 80%;
         margin: 30px auto;
         background-color: #2e9bb6;
-        color: white;
+        color: black;
         height: 200px;
         border-radius: 3px;
         text-align: center;
@@ -108,7 +108,7 @@ canvas {
     }
 
     #response {
-        color: white;
+        color: black;
         text-shadow: 2px 2px 4px #0d1a2b;
         text-align: center;
         display: grid;
@@ -126,7 +126,7 @@ canvas {
     }
 
     h3 {
-        color: white;
+        color: black;
         text-decoration: underline;
         font-weight: 600;
     }
