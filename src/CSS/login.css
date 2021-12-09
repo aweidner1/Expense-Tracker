@@ -19,7 +19,7 @@
 
 a {
     display: grid;
-    color: white;
+    color: black;
     grid-gap: 10px;
     transition: all 0.5s ease-out;
 }
@@ -35,7 +35,7 @@ a:hover {
     background-image: url("/img/HeaderBG.png");
     background-size: cover;
     padding-bottom: 35%; 
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: underline;
 }  
